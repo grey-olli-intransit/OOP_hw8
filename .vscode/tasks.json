@@ -1,0 +1,81 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "wipe build dir with 'rm -Rv build/*'",
+			"command": "/usr/bin/rm",
+			"args": [
+				"-Rv",
+				"${workspaceFolder}/build/*"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "rm: /usr/bin/rm -v build/*"
+		},
+		{
+			"type": "cppbuild",
+			"label": "clean build dir",
+			"command": "/usr/bin/make",
+			"args": [
+				"clean"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "make: /usr/bin/make clean"
+		},
+		{
+			"type": "cppbuild",
+			"label": "make actual binary in build dir",
+			"command": "/usr/bin/make",
+			"args": [
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "make: /usr/bin/make"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cmake prepare for make",
+			"command": "/usr/bin/cmake",
+			"args": [
+				"../"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/build"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "cmake: /usr/bin/cmake ../"
+		}
+	]
+}

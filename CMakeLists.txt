@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+add_compile_options(-Wall -std=c++20)
+PROJECT(homework8)
+add_executable(hw8t1 src/hw8_task1.cpp)
+add_executable(hw8t2 src/hw8_task2.cpp)
+add_executable(hw8t3 src/hw8_task3.cpp)
+add_executable(black-jack src/blackjack-common.cpp)
